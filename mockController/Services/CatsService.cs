@@ -6,9 +6,9 @@ namespace mock.depart.Services
 {
 	public class CatsService : BaseService<Cat>
 	{
-        private static Random random = new Random();
+		private static Random random = new Random();
 
-        public CatsService()
+		public CatsService()
 		{
 		}
 
@@ -16,7 +16,7 @@ namespace mock.depart.Services
 		{
 		}
 
-		public int ChiffreChanceux()
+		public virtual int ChiffreChanceux()
 		{
 			return random.Next(1, 101); // Génère un nombre aléatoire entre 1 et 100
 		}
